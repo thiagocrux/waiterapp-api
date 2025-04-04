@@ -7,7 +7,6 @@ export const Product = model(
     description: { type: String, required: true },
     imagePath: { type: String, required: true },
     price: { type: Number, required: true },
-    icon: { type: String, required: true },
     ingredients: {
       type: [
         {
