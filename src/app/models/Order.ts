@@ -21,8 +21,10 @@ export const Order = model(
             required: true,
             ref: 'Product',
           },
-          quantity: Number,
-          default: 1,
+          quantity: {
+            type: Number,
+            default: 1,
+          },
         },
       ],
     },
