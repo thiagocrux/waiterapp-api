@@ -1,6 +1,6 @@
-/* eslint-disable no-console */
 import express from 'express';
 import mongoose from 'mongoose';
+import path from 'node:path';
 
 import { router } from './router';
 import logger from './utils/logger';
@@ -12,6 +12,11 @@ mongoose
   .then(() => {
     const app = express();
 
+    app.use(
+      '/uploads',
+      express.static(path.resolve(__dirname, '..', 'uploads'))
+    );
+
     app.use(express.json());
     app.use(router);
 
@@ -20,4 +25,4 @@ mongoose
       logger.info(`Server running on http://localhost:${PORT}`);
     });
   })
-  .catch((error) => console.log(`[mongodb] Error: `, error));
+  .catch((error) => logger.error(`[mongodb] Error: `, error));
