@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { Order } from '../../models/Order';
+import { Order } from '../../models';
 
 export async function cancelOrder(request: Request, response: Response) {
   try {

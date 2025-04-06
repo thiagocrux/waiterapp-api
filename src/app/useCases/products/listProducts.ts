@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 
-import { Product } from '../../models/Product';
+import { Product } from '../../models';
 
 export async function listProducts(request: Request, response: Response) {
   try {
