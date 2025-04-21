@@ -27,29 +27,12 @@ const upload = multer({
   }),
 });
 
-// List categories
 router.get('/categories', listCategories);
-
-// Create categories
 router.post('/categories', createCategory);
-
-// List products
 router.get('/products', listProducts);
-
-// Create products
 router.post('/products', upload.single('image'), createProduct);
-
-// List products by category
 router.get('/categories/:categoryId/products', listProductsByCategory);
-
-// List orders
 router.get('/orders', listOrders);
-
-// Create order
 router.post('/orders', createOrder);
-
-// Change order status
 router.patch('/orders/:orderId', changeOrderStatus);
-
-// Cancel (delete) order
 router.delete('/orders/:orderId', cancelOrder);
