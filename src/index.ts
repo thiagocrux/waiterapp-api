@@ -1,9 +1,10 @@
+import 'dotenv/config';
 import express from 'express';
 import mongoose from 'mongoose';
 import path from 'node:path';
 
 import { router } from './router';
-import logger from './utils/logger';
+import { logger } from './utils';
 
 const PORT = 3001;
 
