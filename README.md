@@ -55,7 +55,7 @@ This section describes the available scripts in the `package.json` file and thei
 
 - #### `dev`
 
-  Starts the server in development mode using `nuxt dev`, enabling faster builds and live-reloading.
+  Starts the server in development mode, enabling faster builds and live-reloading.
 
   ```bash
   pnpm dev
