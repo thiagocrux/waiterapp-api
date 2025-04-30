@@ -2,6 +2,8 @@
 
 API of the WaiterApp, an app made to help waiters to manage orders.
 
+For more details on other project components, check out the [web client](https://github.com/thiagocrux/waiterapp-web) and [mobile client](https://github.com/thiagocrux/waiterapp-mobile) repositories.
+
 ## Technologies
 
 These are some of the tecnologies used in this project:
@@ -16,6 +18,7 @@ These are some of the tecnologies used in this project:
 - `multer`: A middleware for handling multipart/form-data, which is primarily used for uploading files.
 - `pino`: A very low overhead Node.js logger.
 - `prettier`: A code formatter.
+- `socket.io`: A a JavaScript library that enables real-time, bidirectional communication between clients (e.g., browsers) and servers. It uses WebSocket as the primary transport protocol when supported but falls back to alternatives (like HTTP long-polling) for broader compatibility.
 - `tsx`: A command-line tool and Node.js enhancement that allows you to execute TypeScript files directly without needing to explicitly compile them to JavaScript first.
 
 _For more information about other dependencies, see the `package.json` file._
