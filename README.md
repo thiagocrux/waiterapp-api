@@ -45,9 +45,9 @@ pnpm install
 
 4. Create a `.env` file on the project's root and set the environment variables following the instructions on the comments:
 
-```
+```JavaScript
 # Config an API key on https://www.https://api.imgbb.com/ and set it below.
-IMGBB_API_KEY=
+IMGBB_API_KEY=""
 ```
 
 ## Available scripts
@@ -82,7 +82,7 @@ This section describes the available scripts in the `package.json` file and thei
   pnpm start
   ```
 
-## Useful links
+## Related links
 
 - [JStack](https://app.jstack.com.br/)
 
