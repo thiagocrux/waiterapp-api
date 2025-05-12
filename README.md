@@ -43,7 +43,7 @@ cd waiterapp-api
 pnpm install
 ```
 
-4. Create a `.env` file on the project's root, config an API key on (Imgbb)[https://www.https://api.imgbb.com/] and set it below:
+4. Create a `.env` file on the project's root, config an API key on [Imgbb](https://www.https://api.imgbb.com/) and set it below:
 
 ```JavaScript
 IMGBB_API_KEY=""
