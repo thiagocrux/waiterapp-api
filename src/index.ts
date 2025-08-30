@@ -12,8 +12,16 @@ const app = express();
 const server = http.createServer(app);
 export const io = new Server(server);
 
+const DATABASE_URL =
+  process.env.DATABASE_URL ||
+  (() => {
+    throw new Error(
+      'DATABASE_URL environment variable is required (e.g., mongodb://localhost:27017)'
+    );
+  })();
+
 mongoose
-  .connect('mongodb://localhost:27017')
+  .connect(DATABASE_URL)
   .then(() => {
     const PORT = 3001;
 
@@ -33,7 +41,7 @@ mongoose
     app.use(router);
 
     server.listen(PORT, () => {
-      logger.info('Database running on mongodb://localhost:27017');
+      logger.info(`Database running on ${DATABASE_URL}`);
       logger.info(`Server running on http://localhost:${PORT}`);
     });
   })
