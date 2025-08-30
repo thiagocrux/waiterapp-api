@@ -32,7 +32,6 @@ Before installing and running this project, make sure you have the following:
 - **MongoDB**: You need to have MongoDB installed and a database configured. You can download and install MongoDB from [mongodb.com](https://www.mongodb.com/try/download/community).
 - **Node.js**: Install Node.js from [nodejs.org](https://nodejs.org/).
 - **Package Manager**: You need a package manager for Node.js. This tutorial uses [pnpm](https://pnpm.io/), but you can use npm or yarn if you prefer.
-- **Docker** (optional): Recommended for easy setup and management of PostgreSQL and other services. Install Docker from [docker.com](https://www.docker.com/).
 
 ## Installation
 
